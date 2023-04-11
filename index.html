@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <title>My Stocks Dashboard</title>
 
-    <!-- Google tag (gtag.js) goes somewhere around here -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NS67CRD0Z3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-NS67CRD0Z3');
+    </script>
+    <link rel="stylesheet" href="Styling.css">
 </head>
 <body>
 
@@ -19,17 +28,20 @@
 
         <label>Stock:</label>
         <select id="my-stock-selector">
-            <option value="MSFT" selected>Microsoft (MSFT)</option>
-            <option value="GOOG">Google (GOOGL)</option>
+            <option value="AMZN" selected>Amazon.com (AMZN)</option>
             <option value="AAPL">Apple (AAPL)</option>
-            <option value="TSLA">Tesla (TSLA)</option>
-            <option value="GME">Gamestop (GME)</option>
-            <option value="PNC">PNC Bank (PNC)</option>
             <option value="CEI">Camber Energy (CEI)</option>
+            <option value="GME">Gamestop (GME)</option>
+            <option value="GOOG">Google (GOOGL)</option>
+            <option value="META">Meta Platforms Inc (META)</option>
+            <option value="MSFT">Microsoft (MSFT)</option>
+            <option value="PNC">PNC Bank (PNC)</option>
+            <option value="TSLA">Tesla (TSLA)</option>
+            <option value="WE">We Work (WE)</option>
         </select>
         <br>
 
-        <button id="my-submit-btn">Go!</button>
+        <button type="button" class="button" id="my-submit-btn">Go!</button>
     </div>
 
     <hr>
